@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration of project 1</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/registerstyle.css"/>
+</head>
+<body>
+    <div id="register">
+        <header>
+            <section>
+                <a href="index.html"> 
+                  <img src="picture/satyabratasm-u_kMWN-BWyU-unsplash.jpg"  height="120px" width="120px" alt=""/>
+                </a>
+                <h1>Registration of project 1</h1>  
+              </section>
+                    
+              <nav class="headernav">
+                <ul class="menu">
+                  <li class="item">Home
+                    <ul class="drop">
+                      <li class="nav-link"><a href="index.html">Home</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">About
+                    <ul class="drop">
+                      <li class="nav-link"><a href="about.html">About</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">Register
+                    <ul class="drop">
+                      <li class="nav-link"><a href="register.html">Registration</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </nav>
+        </header>
+        
+        <main>
+          <form action="/register" method="post">
+
+            <label for="name">
+            Name:
+            </label>
+            <input id="name" name="name" placeholder="type here (required)" required>
+
+            <label for="email">
+            Email:
+            </label>
+            <input id="email" name="email" type="email" placeholder="type here (required)" required>
+
+            <label for="box1">
+            Do you want to check this checkbox?
+            </label>
+            <input id="box1" type="checkbox" name="box1" checked>
+
+            <select name="dropdown" required>
+                <option value="" selected="selected">Please select (required)</option>
+                <option value="1">option 1</option>
+                <option value="2">option 2</option>
+                <option value="3">option 3</option>
+            </select>
+
+            <button type="submit">Register</button>
+            
+          </form>
+        </main>
+
+        <footer>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="footerlink1.html" class="footer-link">This is link 1 of footer</a>
+            <a href="footerlink2.html" class="footer-link">This is link 2 of footer</a>
+        </footer>
+    </div>
+</body>
+</html>

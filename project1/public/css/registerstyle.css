@@ -1,0 +1,40 @@
+main{
+    background-color: cornsilk;
+}
+  
+  form{
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+  }
+
+  label{
+      grid-column:span 12;
+      font-size: 1.3rem;
+      padding: 0.1rem;
+      margin: 0.5rem;
+      text-align: center;
+  }
+
+  input{
+      grid-column: span 12;
+      font-size: 1.3rem;
+      margin: 0.1rem;
+      padding: 1rem;
+  }
+
+  select{
+      grid-column: span 12;
+      font-size: 1.3rem;
+      margin: 1rem;
+      padding: 1rem;
+      text-align: center;
+  }
+
+  button{
+      background-color: coral;
+      grid-column: span 12;
+      font-size: 1.3rem;
+      margin: 1rem;
+      padding: 1rem;
+      text-align: center;
+  }
