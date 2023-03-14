@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>basic-form</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div id="homepage">
+        <header>
+          <section>
+            <img src="http://placekitten.com/100/100" alt="A LOGO of this homepage"/>
+            <h1>Assignment of js-form</h1>  
+          </section>
+                
+          <nav class="headernav">
+            <ul class="menu">
+              <li class="nav-link"><a href="about.html">This is link 1 of menu</a></li>
+              <li class="nav-link"><a href="famous.html">This is link 2 of menu</a></li>
+              <li class="nav-link"><a href="lolcats.html">This is link 3 of menu</a></li>
+            </ul>
+          </nav>
+        </header>
+        
+        <main>
+          <form class="register" action="/register" method="post">
+            <div class="register_name register-name">
+              <div class="register_name label">
+                <label for="name">
+                  Name: (required)
+                </label>
+              </div>
+              <div class="register_name input">
+                <input id="name" name="name" type="text" placeholder="type here" >
+              </div>
+                <span class="register-name_error">This "Name" field is required</span>
+            </div>
+            <div class="register_email register-email">
+              <div class="register_email label">
+                <label for="email">
+                  Email: (required)
+                </label>
+              </div>
+              <div class="register_email input">
+                <input id="email" name="email" type="text" placeholder="type here" >
+              </div>
+                <div class="register-email_error"></div>
+            </div>
+
+            <div class="register_confirm register-confirm">
+              <div class="register_confirm label">
+                <label for="confirm">
+                  Confirm Email: (required) 
+                </label>
+              </div>
+              <div class="register_confirm input">
+                <input id="confirm" name="confirm" type="text" placeholder="type here" >
+              </div>
+                <div class="register-confirm_error"></div>
+            </div>
+
+             <div class="register-checkbox">
+               <label for="wants-spam">
+                wants-spam :
+                </label>
+                <input id="wants-spam" type="checkbox" name="wants-spam" checked>
+             </div> 
+
+            <div class="register_select register-select">
+              <div class="register_select select">
+                <select name="tier" >
+                  <option value="" selected="selected">Please select</option>
+                  <option value="1">Silver Tier</option>
+                  <option value="2">Gold Tier</option>
+                  <option value="3">Platinum Tier</option>
+                </select>
+              </div>
+              <div class="register_select button">
+                <button type="submit" class="register_submit">Register</button>
+              </div>
+            </div>
+          </form>
+        </main>
+        <footer>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="privacy.html" class="footer-link">This is link 1 of footer</a>
+        <a href="privacy.html" class="footer-link">This is link 2 of footer</a>
+        </footer>
+  </div>
+  <script src="myfile.js"></script>
+</body>
+</html>
