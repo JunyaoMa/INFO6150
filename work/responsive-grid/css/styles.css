@@ -1,0 +1,115 @@
+  html{
+    background-color: rgb(72, 240, 203);  
+  }
+  
+
+  section{
+    background-color: rgb(205, 188, 221);
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+  }
+
+  
+  section h1{
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin:0;
+    padding: 1rem;
+  }
+
+  .menu {
+    background-color: bisque;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    list-style-type:none;
+    margin: 0 auto;
+    padding:5px;
+    text-align: center;
+  }
+
+  .nav-link{
+    align-items:center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    grid-column:span 4;
+    padding:1rem;
+    text-decoration: none;
+  }
+  
+  main{
+    background-color: darkgrey;
+  }
+
+  main h2{ 
+      align-items: center;
+      font-size: 2.5rem;
+      margin: 1rem;
+      padding: 2rem;
+      text-align: center;
+  }
+
+  .cards{
+      display:grid;
+      grid-template-columns: repeat(12,1fr);
+      gap: 1rem;
+      justify-content: space-around;
+  }
+
+  .card{
+      grid-column: span 3;
+      background-color: aqua;
+      border:1px solid black;
+      border-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      font-size: 1.2rem;
+      margin: 1rem;
+      padding:1rem;
+      text-align: center;
+  }
+
+  .card-link{
+      background-color: green;
+      border-radius: 2rem;
+      color: white;
+      padding:1rem;
+      text-decoration: none;
+  }
+
+  a.card-link:hover{
+    background-color: white;
+    color: blue;
+  }
+
+  footer{
+    background-color: rgb(188, 209, 149);
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+    text-align: center; 
+  }
+
+  .footer-link{
+    grid-column:span 4;
+    align-items:center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding:1rem;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width:50rem) {
+      .nav-link{
+        grid-column: span 12;
+      }
+      .card{
+        grid-column: span 12;
+      }
+      .footer-link{
+        grid-column: span 12;
+      }
+      
+  }
