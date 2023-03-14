@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>basic-form</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div id="homepage">
+        <header>
+          <section>
+            <img src="http://placekitten.com/100/100" alt="A LOGO of this homepage"/>
+            <h1>Assignment of basic-form</h1>  
+          </section>
+                
+          <nav class="headernav">
+            <ul class="menu">
+              <li class="nav-link"><a href="about.html">This is link 1 of menu</a></li>
+              <li class="nav-link"><a href="famous.html">This is link 2 of menu</a></li>
+              <li class="nav-link"><a href="lolcats.html">This is link 3 of menu</a></li>
+            </ul>
+          </nav>
+        </header>
+        
+        <main>
+          <form action="/submit" method="post">
+
+            <label for="name">
+            Name:
+            </label>
+            <input id="name" name="name" placeholder="type here" required>
+
+            <label for="email">
+            Email:
+            </label>
+            <input id="email" name="email" type="email" placeholder="type here" required>
+
+            <label for="annoy_me">
+            Do you want us to send you annoying emails?
+            </label>
+            <input id="annoy_me" type="checkbox" name="annoy_me" checked>
+
+            <select name="tier" required>
+                <option value="" selected="selected">Please select</option>
+                <option value="1">Silver Tier</option>
+                <option value="2">Gold Tier</option>
+                <option value="3">Platinum Tier</option>
+            </select>
+
+            <button type="submit">Register</button>
+            
+          </form>
+        </main>
+        <footer>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="privacy.html" class="footer-link">This is link 1 of footer</a>
+        <a href="privacy.html" class="footer-link">This is link 2 of footer</a>
+        </footer>
+  </div>
+</body>
+</html>
