@@ -1,0 +1,299 @@
+  html{
+    background-color: burlywood;  
+  }
+  
+  .skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  section{
+    background-color: burlywood;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+  }
+
+  
+  section h1{
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin:0;
+    padding: 1rem;
+  }
+
+
+  .icon{
+    color: black;
+    display:block;
+    width: 10px;
+  }
+
+  
+  
+  .hambergermenu {
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    list-style-type:none;
+    margin: 0 auto;
+    padding:5px;
+    text-align: center;
+  }
+
+
+  ul {
+    padding: 0%;  
+  }
+  
+  li {
+    list-style: none;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .item {
+    color: blue;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    grid-column: span 2;
+  }
+  
+  .drop {
+    background-color: burlywood;
+    display: block;
+    left: 0;
+    max-width: 400px;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+  }
+
+  .drop.active {
+    display: none;
+  }
+
+  .menu {
+    background-color: burlywood;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    list-style-type:none;
+    margin: 0 auto;
+    padding:5px;
+    text-align: center;
+  }
+  
+  .menu.active{
+    display:none;
+  }
+  .nav-link{
+    align-items:center;
+    font-size: 1rem;
+    font-weight: bold;
+    grid-column:span 4;
+    padding:1rem;
+    text-decoration: none;
+  }
+  
+  main{
+    background-color: papayawhip;
+  }
+  
+  .paragraph{
+    background-color: #eee;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem;
+  }
+
+.homepage-picture1{
+  float:right;
+  padding: 0.5rem;
+}
+
+.homepage-picture2{
+  float:left;
+  padding: 0.5rem;
+}
+
+.br1, .br2{
+  display:none;
+}
+  main h2{ 
+      align-items: center;
+      font-size: 2.5rem;
+      margin: 1rem;
+      padding: 2rem;
+      text-align: center;
+  }
+
+  .cards{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: #eee;
+    grid-column: span 12;
+    border:1px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 1rem;
+    margin: 1rem;
+    padding:1rem;
+    text-align: center;
+}
+
+.formbutton{
+  background-color: #eee;
+  border-color: #eee;
+  border-width: 0em;
+  box-shadow: 0px 0px;
+  color:blue;
+  font-size: 1.2rem;
+}
+
+.model{
+  display:none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left:5rem;
+  top: 10rem;
+  width: 300px; 
+  height: auto; 
+  overflow: auto; 
+  background-color: white;
+}
+
+.register{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.register p{
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+}
+.register_email , .register_confirm  {
+  font-size: 1rem;
+  margin: 1rem;  
+  
+}
+
+.register_email label , .register_confirm label {
+
+font-size: 1rem;
+margin: 1rem;
+
+}
+
+.register_email input , .register_confirm input {
+font-size: 1rem; 
+width: max-content;
+}
+
+
+.register-email_error , .register-confirm_error{
+  color: red;
+  font-size: 1rem;
+  margin: 2rem;
+  text-align: left;
+}
+
+.register-email_error:empty , .register-confirm_error:empty{
+  display: none;
+}
+
+.register_submit{
+    background-color: green;
+    border-radius: 2rem;
+    color: white;
+    padding:0.5rem;
+    margin: 1rem;
+    margin-right: 5rem;
+    text-decoration: none;
+}
+
+.register_cancel{
+  background-color: red;
+  border-radius: 2rem;
+  color: white;
+  padding:0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+
+  footer{
+    background-color: burlywood;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+    text-align: center; 
+  }
+
+  .footer-link{
+    grid-column:span 12;
+    align-items:center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding:1rem;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width:44rem) {
+      
+      .menu.active{
+        display:grid;
+      }
+      .icon{
+        display:none;
+      }
+      .drop{
+        display:none;
+      }
+      .model{
+        left: 25rem;
+        top: 10rem;
+        width: auto; 
+        height: auto; 
+      }
+
+      .register_submit{
+        margin-right: 15rem;
+      }
+      .paragraph{
+        margin: 1rem;
+      }
+      .br1, .br2{
+        display:block;
+      }
+      .card{
+        grid-column: span 4;
+      }
+      .footer-link{
+        grid-column: span 3;
+      }
+      
+  }

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="homepage">
+      <header>
+        <a href="#main" class="skip">skip to main content</a>
+        <section>
+          <a href="index.html"><img src="http://placekitten.com/100/100" alt=""/></a>
+          <h1>Famous Internet Cats</h1>  
+
+          <ul class="hambergermenu">
+            <li class="item">
+              <a href="javascript:void(0);" class="icon" >
+              <i class="fa fa-bars"></i>
+              </a>
+              <ul class="drop active">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="cats.html">Famous Cats</a></li>
+                <li class="nav-link"><a href="cat-events.html">Cat Events</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+              
+        <nav class="headernav">
+          <ul class="menu active">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="cats.html">Famous Cats</a></li>
+            <li class="nav-link"><a href="cat-events.html">Cat Events</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main id="main">
+        <div class="cards">
+            <div class="card">
+            <h3 class="card-heading">Clyde</h3>
+            <img class="card-picture" src="http://placekitten.com/200/200?image=2" alt="picture of a cat called Clyde">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatum doloremque tempora sapiente provident. Libero rem voluptatum molestiae officia a harum laboriosam laudantium omnis minus corrupti, magnam ipsam <button class="formbutton">Subscribe</button> doloribus eaque?</p>
+            </div>
+            <div class="card">
+             <h3 class="card-heading">Jax</h3>
+             <img class="card-picture" src="http://placekitten.com/200/200?image=3" alt="picture of a cat called Jax">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolore autem atque, ullam cupiditate asperiores voluptatem illum magni, fugiat aliquam reprehenderit ipsam nemo dolor praesentium rerum nisi provident <button class="formbutton">Subscribe</button> aspernatur maxime?</p>
+             </div>
+            <div class="card">
+             <h3 class="card-heading">Kiki</h3>
+             <img class="card-picture" src="http://placekitten.com/200/200?image=4" alt="picture of a cat called Kiki">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate natus voluptates voluptatibus amet, ex at libero. Laudantium, saepe ipsam. Hic, mollitia quos. Quisquam saepe recusandae obcaecati soluta! Nostrum, sunt <button class="formbutton">Subscribe</button> voluptatum!</p>
+             </div>
+             <div class="card">
+             <h3 class="card-heading">Mocha</h3>
+             <img class="card-picture" src="http://placekitten.com/200/200?image=5" alt="picture of a cat called Mocha">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id atque fugiat? Facere earum mollitia quae culpa, doloremque ab quidem porro, architecto natus omnis odit nisi deleniti inventore exercitationem <button class="formbutton">Subscribe</button> eveniet?</p>
+             </div>
+             <div class="card">
+             <h3 class="card-heading">Goose</h3>
+             <img class="card-picture" src="http://placekitten.com/200/200?image=6" alt="picture of a cat called Goose">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore odit impedit ut quasi architecto pariatur optio quae quo quis, exercitationem illum, vero eligendi molestiae nisi minima soluta voluptate <button class="formbutton">Subscribe</button> eos?</p>
+             </div>
+             <div class="card">
+             <h3 class="card-heading">Croqueta</h3>
+             <img class="card-picture" src="http://placekitten.com/200/200?image=7" alt="picture of a cat called Croqueta">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et eum aliquid repellendus, quisquam atque! Temporibus ducimus, porro veritatis quae nobis asperiores ratione. Deserunt impedit tempore doloremque <button class="formbutton">Subscribe</button> odio saepe tempora?</p>
+             </div>
+          </div>
+          <div class="model">
+            <form name="myform" class="register" action="/subscribe" method="post">
+                <div class="register_email register-email">
+                    <div class="register_email label">
+                        <p>Subscribe to the Latest Mews!</p>
+                      <label for="email">
+                        Email:
+                      </label>
+                      <span>  * required</span>
+                    </div>
+                    <div class="register_email input">
+                      <input id="email" name="email" type="text" placeholder="type here" >
+                    </div>
+                      <div class="register-email_error"></div>
+                  </div>
+      
+                  <div class="register_confirm register-confirm">
+                    <div class="register_confirm label">
+                      <label for="confirm">
+                        Confirm Email:
+                      </label>
+                      <span>
+                        * required
+                      </span>
+                    </div>
+                    <div class="register_confirm input">
+                      <input id="confirm" name="confirm" type="text" placeholder="type here" >
+                    </div>
+                      <div class="register-confirm_error"></div>
+                  </div>
+                  <div class="register-button">
+                    <div class="register-button button">
+                        <button type="submit" class="register_submit">Subscribe</button>
+                        <a href="cats.html" class="register_cancel">Cancel</a>
+                    </div>            
+                  </div>
+            </form>
+          </div>
+      </main>
+      <footer>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="workforus.html" class="footer-link">Work for Us</a>
+        <a href="contactus.html" class="footer-link">Contact Us</a>
+        <a href="socialmedia.html" class="footer-link">Social Media</a>
+      </footer>
+    </div>
+    <script src="myfile.js"></script>
+  </body>
+</html>
